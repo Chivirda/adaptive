@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/ralewayregular.woff') format('woff');
+    src: url('../fonts/ralewayregular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.head, .price, .reviews {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+/* head */
+
+.head {
+    padding: 108px 0 105px 0;
+    background-color: #ffffff;
+}
+
+.content {
+    margin: 0 140px;
+}
+
+.divider {
+    height: 2px;
+    width: 64px;
+    background-color: #ff8c2d;
+    align-self: center;
+    margin: 30px auto;
+}
+
+.text {
+    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.head-card-wrapper {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+.head-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-img {
+    height: 70px;
+    width: 70px;
+    margin-bottom: 30px;
+}
+
+.card-header {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.card-text {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 350px;
+}
+
+/* price */
+
+.price {
+    padding: 108px 0 95px 0;
+    background-color: rgb(255, 243, 203);
+    justify-content: center;
+}
+
+.price-card-wrapper {
+    max-width: 1200px;
+    justify-self: center;
+    display: grid;
+    margin: 80px auto 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    grid-gap: 40px;
+}
+
+.price-card {
+    align-self: end;
+}
+
+.price-card__header {
+    background-color: #303030;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 1px;
+    font-weight: bold;
+    padding: 22px 0;
+}
+
+.price-card__price {
+    font-family: 'Raleway', sans-serif;
+    font-size: 94px;
+    padding: 30px 0 13px 0;
+}
+
+.currency {
+    font-size: 35px;
+}
+
+.price-card__subscription {
+    line-height: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #989898;
+    padding-bottom: 0;
+}
+
+.marker {
+    height: 5px;
+    width: 100%;
+    background-color: #ff8c2c;
+    margin-top: 22px;
+}
+
+.marker.popular {
+    padding: 14px 0 32px 0;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.price-card__body {
+    line-height: 24px;
+    color: #86878b;
+    text-transform: uppercase;
+    background-color: #fff;
+    padding: 15px 0;
+    margin-bottom: 1px;
+}
+
+/* reviews */
+
+.reviews {
+    padding: 110px 0;
+}
+
+.container {
+    margin-top: 58px;
+}
+
+.review-card {
+    margin: 0 60px;
+}
+
+.review-text {
+    text-align: left;
+    color: #86878b;
+    background-color: rgb(255, 243, 203);
+    padding: 27px 12px;
+    position: relative;
+}
+
+.review-text:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 27px;
+    top: 100%;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid rgb(255, 243, 203);
+
+}
+
+.customer {
+    margin-top: 24px;
+    height: 70px;
+    margin-left: 2px;
+}
+
+.customer-photo {
+    height: 70px;
+    width: 70px;
+    border-radius: 100px;
+    background-color: #9a9a9a;
+    float: left;
+    margin-right: 15px;
+}
+
+.customer-info {
+    text-align: left;
+    padding: 20px 0 15px 0;
+}
+
+.customer-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customer-position {
+    font-size: 14px;
+    font-weight: normal;
+    color: #8e8f92;
+    line-height: 26px;
+}
